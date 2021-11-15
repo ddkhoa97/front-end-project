@@ -1,0 +1,7 @@
+.slick-slide {
+    padding-left:10px;
+ }
+ 
+ .slick-list [data-slick-index="0"] {
+     margin-left: 0;
+   }

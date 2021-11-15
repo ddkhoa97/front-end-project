@@ -1,0 +1,96 @@
+.WrappedStyled {
+  padding: 0 16px 16px 0;
+  width: 25%;
+}
+
+.zoom {
+  transition: transform 0.3s;
+  display: block; /* Animation */
+}
+.zoom:hover {
+  transform: scale(1.03);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.Restaurant_card {
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.ant-card-body {
+  padding: 10px !important;
+}
+.Restaurant_card_content {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  overflow: hidden;
+  font-size: 15px;
+}
+.Restaurant_name {
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  font-weight: 500;
+  text-align: start;
+  margin: 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgb(32, 33, 37);
+  margin-bottom: 5px;
+}
+.Restaurant_type {
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  font-weight: 400;
+  color: rgba(32, 33, 37, 0.64);
+  text-align: start;
+  margin: 0.25rem 0px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  min-height: 1.25rem;
+}
+.Restaurant_card_footer {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 2rem;
+  border-top: 0.0625rem dashed rgba(32, 33, 37, 0.12);
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  font-weight: 400;
+  color: rgba(32, 33, 37, 0.64);
+  padding: 0px;
+}
+.Restaurant_card_footer_price_active{
+  color: black;
+}
+.Restaurant_card_footer_price_inactive{
+  color: rgba(32, 33, 37, 0.28);
+}

@@ -1,0 +1,84 @@
+.WrappedStyled {
+  margin: 0;
+  padding: 0;
+}
+
+.WrappedHeader {
+
+ 
+  margin: auto;
+  padding: 40px;
+    position: absolute;
+    bottom: 0;
+}
+.ImageWrappedStyled{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+   width: auto;
+    margin: auto;
+    position: relative;
+}
+.HeaderCard {
+  
+  max-width: 1200px;
+}
+.RestaurantName {
+  font-feature-settings: "kern", "ss01", "ss05", "ss07";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: WoltHeading-Omnes, system-ui, -apple-system, BlinkMacSystemFont,
+    Roboto, "Open Sans", sans-serif;
+  font-variant-ligatures: common-ligatures;
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  font-size: 4rem;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+  max-height: 3.6em;
+  word-break: break-word;
+  overflow: hidden;
+  margin-bottom: 0px;
+}
+.RestaurantInfo {
+ 
+  color: rgb(255, 255, 255);
+ 
+  font-feature-settings: "kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: none;
+  font-weight: 500;
+  max-width: 500px;
+  position:initial;
+  left: 0;
+}
+.RestaurantMenu{
+  margin-top: 20px;
+  
+ 
+}
+.RestaurantCategory{
+  
+  min-height: 20vh;
+  text-align: center;
+  position: -webkit-sticky;
+position: sticky;
+top: 20px;
+}
+.RestaurantMenuContent{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 20vh;
+  background-color: #ececec;
+}
