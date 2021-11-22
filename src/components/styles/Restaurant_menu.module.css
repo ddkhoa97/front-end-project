@@ -4,24 +4,21 @@
 }
 
 .WrappedHeader {
-
- 
   margin: auto;
   padding: 40px;
-    position: absolute;
-    bottom: 0;
+  position: absolute;
+  bottom: 0;
 }
-.ImageWrappedStyled{
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 50vh;
-   width: auto;
-    margin: auto;
-    position: relative;
+.ImageWrappedStyled {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  width: auto;
+  margin: auto;
+  position: relative;
 }
 .HeaderCard {
-  
   max-width: 1200px;
 }
 .RestaurantName {
@@ -44,9 +41,8 @@
   margin-bottom: 0px;
 }
 .RestaurantInfo {
- 
   color: rgb(255, 255, 255);
- 
+
   font-feature-settings: "kern";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizelegibility;
@@ -59,26 +55,29 @@
   text-transform: none;
   font-weight: 500;
   max-width: 500px;
-  position:initial;
+  position: initial;
   left: 0;
 }
-.RestaurantMenu{
+.RestaurantMenu {
   margin-top: 20px;
-  
- 
 }
-.RestaurantCategory{
-  
+.RestaurantCategory {
   min-height: 20vh;
   text-align: center;
   position: -webkit-sticky;
-position: sticky;
-top: 20px;
+  position: sticky;
+  top: 20px;
 }
-.RestaurantMenuContent{
+.RestaurantMenuContent {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   min-height: 20vh;
   background-color: #ececec;
+}
+.WrappedShoppingCart {
+margin-top: 30px;
+}
+.WrappedButton {
+ 
 }

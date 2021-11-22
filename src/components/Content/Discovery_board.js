@@ -5,7 +5,7 @@ import styles from "../styles/Content.module.css";
 export default function Discovery_board() {
   return (
     <div className={styles.WrapperStyled}>
-      <BigBoard></BigBoard>
+      {/* <BigBoard></BigBoard> */}
       <Categories></Categories>
     </div>
   );

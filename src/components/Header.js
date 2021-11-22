@@ -119,7 +119,7 @@ export default function Header(props) {
               onClick={(e) => e.preventDefault()}
             >
               <div>
-                <Button
+                {/* <Button
                   size="large"
                   style={{ marginRight: "10px" }}
                   onClick={showLoginModal}
@@ -150,7 +150,7 @@ export default function Header(props) {
                   form={Registerform}
                   submitButton={submitButton}
                   buttonDisabled={buttonDisabled}
-                ></RegisterModal>
+                ></RegisterModal> */}
                 <Dropdown overlay={menu} trigger={["click"]}>
                   <Avatar
                     size="large"

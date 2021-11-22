@@ -1,0 +1,105 @@
+{
+    "restaurant":[
+    {
+        "id":"1",
+        "name":"Mcdonald's Oulu",
+        "categoryID":"1",
+        "pricing":"1",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    },
+    {
+        "id":"2",
+        "name":"Old Lemoon",
+        "categoryID":"2",
+        "pricing":"3",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    },
+    {
+        "id":"3",
+        "name":"Cafe Aitta9",
+        "categoryID":"3",
+        "pricing":"2",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    }
+    ,  {
+        "id":"4",
+        "name":"Pizzeria Romeo",
+        "categoryID":"2",
+        "pricing":"4",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    },
+    {
+        "id":"5",
+        "name":"Burger King Oulu",
+        "categoryID":"3",
+        "pricing":"3",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    },
+    {
+        "id":"6",
+        "name":"Da Max",
+        "categoryID":"2",
+        "pricing":"3",
+        "address":"City center",
+        "city":"Oulu",
+        "openHours":{
+            "open":"12",
+            "close":"23"
+        },
+        "image":"mcdonal.jpg"
+    }
+],
+    "category":[
+        {
+            "id":"1",
+            "restaurantID":"1",
+            "name":"Pizza"
+        },
+        {
+            "id":"2",
+            "restaurantID":"1",
+            "name":"Burger"
+        }
+        ,
+        {
+            "id":"3",
+            "restaurantID":"1",
+            "name":"Chinese Food"
+        },
+        {
+            "id":"4",
+            "restaurantID":"1",
+            "name":"Cafe"
+        }
+    ]
+}

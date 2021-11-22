@@ -30,7 +30,7 @@ export default function Index(props) {
               Discovery
             </Button>
           </NavLink>
-          <NavLink to="restaurant"  onClick={()=>{props.RestaurantClicked()}}>
+          <NavLink to="/restaurant"  onClick={()=>{props.RestaurantClicked()}}>
             <Button
               type={props.Restaurant ? "primary" : ""}
               shape="round"

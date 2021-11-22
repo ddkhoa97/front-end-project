@@ -1,0 +1,75 @@
+.WrappedStyled {
+    padding: 0 16px 16px 0;
+    width: 25%;
+  }
+  
+  .zoom {
+    transition: transform 0.3s;
+    display: block; /* Animation */
+  }
+  .zoom:hover {
+    transform: scale(1.03);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .Food_card {
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .ant-card-body {
+    padding: 10px !important;
+  }
+  .Food_card_content {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    overflow: hidden;
+    font-size: 15px;
+  }
+  .Food_name {
+    font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+    font-weight: 500;
+    text-align: start;
+    margin: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgb(32, 33, 37);
+    margin-bottom: 5px;
+  }
+  .Food_description {
+    font-feature-settings: "kern";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+      "Helvetica Neue", sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+    font-weight: 400;
+    color: rgba(32, 33, 37, 0.64);
+    text-align: start;
+    margin: 0.25rem 0px 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-height: 1.25rem;
+  }
+.Card_header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+}
