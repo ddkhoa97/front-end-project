@@ -96,7 +96,7 @@ export default function Header(props) {
         <Col span={8}>
           <div className={styles.Header_left}>
             <Link to="/discovery" onClick={() => props.DiscoveryClicked()}>
-              <img src="../images/wolt.png" height="61" width="110"></img>
+              <img src="/images/wolt.png" height="61" width="110"></img>
             </Link>
           </div>
         </Col>

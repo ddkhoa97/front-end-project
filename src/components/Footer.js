@@ -33,12 +33,12 @@ export default function Footer() {
               </span>
             </h3>
             <img
-              src="../images/applestorelogo.png"
+              src="/images/applestorelogo.png"
               height="100"
               width="80%"
               style={{ marginBottom: "20px" }}
             ></img>
-            <img src="../images/googlestore.png" height="100" width="80%"></img>
+            <img src="/images/googlestore.png" height="100" width="80%"></img>
           </div>
           <div className={styles.Footer_column}>
             <h3 className={styles.Footer_column_title}>

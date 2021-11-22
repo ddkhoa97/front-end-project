@@ -47,3 +47,40 @@
     display: block;
     color: #009de0;
 }
+.PriceTag{
+    margin: auto;
+    width: 80%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+}
+
+.PriceTagContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.PriceTagHeader{
+    
+    font-feature-settings: "kern", "ss01", "ss05", "ss07";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    font-family: WoltHeading-Omnes, system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", sans-serif;
+    font-variant-ligatures: common-ligatures;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: none;
+
+}
+.PriceTagSmallHeader{
+    font-weight: 500;
+}
+.PriceTotal{
+    font-weight: 900;
+    font-size: 1.75rem;
+}

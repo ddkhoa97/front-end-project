@@ -54,12 +54,12 @@ function App() {
               />
             }
           >
-          <Route path="/"element={<Discovery_board />} />
-            <Route path="/discovery"element={<Discovery_board />} />
+          <Route path="/"element={<Discovery_board  restaurant_list={RestaurantList.restaurant}/>} />
+            <Route path="/discovery"element={<Discovery_board restaurant_list={RestaurantList.restaurant} />} />
             <Route path="/restaurant" element={  <Restaurant_board restaurant_list={RestaurantList.restaurant}  />} />
           </Route>
           <Route path="/*" element={<Error />} />
-          <Route path="/restaurant/:name/checkout" element={<Checkout />} />
+          <Route path="/restaurant/:name/checkout" element={<Checkout DiscoveryClicked={DiscoveryClicked} />} />
           <Route
             path="/restaurant/:name"
             exactly
