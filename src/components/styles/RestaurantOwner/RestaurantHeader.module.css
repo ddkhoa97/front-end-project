@@ -1,0 +1,36 @@
+.WrapperStyled{
+    margin: auto;
+    
+    padding: 10px 0;
+    height: 100%;
+    max-width: 1200px;
+    }
+    
+    .Header_left{
+    flex: 1 0;
+    display: flex;
+    }
+    
+    .Header_left a:active{
+        border: 0.1px solid #1890ff;
+    }
+    
+    .Header_center{
+        flex: 2;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Header_right{
+        flex: 1;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        padding:15px;
+    }
+    .dropdown_menu_content{
+        margin: 0.5rem !important;
+        text-align: center !important;
+    }
