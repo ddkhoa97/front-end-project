@@ -196,7 +196,7 @@ export default function Dashboard() {
     },
   ];
   return (
-    <div style={{ padding: "15px" }}>
+    <div >
       <Row gutter={16} style={{ marginBottom: "20px" }}>
         <Col span={8}>
           <Card
