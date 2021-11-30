@@ -101,5 +101,34 @@
             "restaurantID":"1",
             "name":"Cafe"
         }
-    ]
+    ],
+    "orders":[
+        {
+          "key": "1",
+          "restaurant": "Mc Donald Oulu",
+          "cost": 1290000,
+          "ordertime": "12:00:00 12/12/21",
+          "estimate": "13:00:00 12/12/21",
+          "status": 0,
+          "confirm": false
+        },
+        {
+            "key": "2",
+            "restaurant": "Mc Donald Oulu",
+            "cost": 1290000,
+            "ordertime": "12:00:00 12/12/21",
+            "estimate": "13:00:00 12/12/21",
+            "status": 0,
+            "confirm": false
+          },
+          {
+            "key": "3",
+            "restaurant": "Mc Donald Oulu",
+            "cost": 1290000,
+            "ordertime": "12:00:00 12/12/21",
+            "estimate": "13:00:00 12/12/21",
+            "status": 3,
+            "confirm": false
+          }
+      ]
 }

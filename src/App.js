@@ -18,8 +18,10 @@ import RestaurantHeader from "./components/RestaurantOwner/Header.js";
 import RestaurantFooter from "./components/RestaurantOwner/Footer.js";
 import RestaurantSidebar from "./components/RestaurantOwner/Sidebar.js";
 
+
 function App() {
   const [RestaurantList, setRestaurantList] = useState(data);
+  const [orderList, setOrderList] = useState(data.orders);
   const [Restaurant, setRestaurant] = useState(false);
   const [Discovery, setDiscovery] = useState(true);
   const [isAuthenticated, setAuthenticated] = useState(false);
@@ -43,10 +45,14 @@ function App() {
     );
   };
 
+  const updateConfirm = useCallback((e) =>{
+     setOrderList(e)
+  });
+
   function CustomerView() {
     return (
       <>
-        <Header DiscoveryClicked={DiscoveryClicked}></Header>
+        <Header DiscoveryClicked={DiscoveryClicked} ordersList={orderList} updateConfirm={updateConfirm}></Header>
 
         <Divider style={{ margin: "0" }} />
         <Routes>

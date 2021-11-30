@@ -14,20 +14,9 @@ import {
 } from "antd";
 import LoginModal from "./Modals/LoginModal";
 import RegisterModal from "./Modals/RegisterModal";
+import ViewHistoryModal from "./Modals/ViewHistoryModal";
+import DetailOrderModal from "./Modals/DetailOrderModal";
 
-const menu = (
-  <Menu>
-    <Menu.Item key="0" className={styles.dropdown_menu_content}>
-      <a href="#">Profile</a>
-
-      <div>Dinh dang Khoa</div>
-    </Menu.Item>
-    <Menu.Divider />
-    <Menu.Item key="1" className={styles.dropdown_menu_content}>
-      <a href="#">Log out</a>
-    </Menu.Item>
-  </Menu>
-);
 
 const Search = Input.Search;
 const onSearch = (value) => console.log(value);
@@ -37,11 +26,30 @@ export default function Header(props) {
   const [Registerform] = Form.useForm();
   const [loginVisible, setLoginVisible] = useState(false);
   const [registerVisible, setRegisterVisible] = useState(false);
+  const [viewHistoryVisible, setViewHistoryVisible] = useState(false);
+  const [viewDetailOrderHistoryVisible, setViewDetailOrderHistoryVisible] = useState(false);
+  const [orderID, setOrderID] = useState();
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [loginInputs, setLoginInputs] = useState("");
   const [registerInputs, setRegisterInputs] = useState("");
   const [buttonDisabled, setButtonDisabled] = useState(true);
-
+  const menu = (
+    <Menu>
+      <Menu.Item key="0" className={styles.dropdown_menu_content}>
+        <a href="#">Profile</a>
+  
+        <div>Dinh dang Khoa</div>
+      </Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="1" className={styles.dropdown_menu_content}>
+        <a  href="#" onClick={() =>  setViewHistoryVisible(true)}>View order</a>
+      </Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="2" className={styles.dropdown_menu_content}>
+        <a href="#">Log out</a>
+      </Menu.Item>
+    </Menu>
+  );
   //Function to handle login here
   const handleLogin = useCallback((e) => {
     const value = e;
@@ -73,15 +81,37 @@ export default function Header(props) {
   const showRegisterModal = useCallback(() => {
     setRegisterVisible(true);
   });
+
+  const showDetailOrder = useCallback((e) => {
+    setViewDetailOrderHistoryVisible(true);
+    setOrderID(e);
+  });
+ 
+  
   //
+  const handleOk1= useCallback(()=>{
+   
+  setViewDetailOrderHistoryVisible(false);
+});
+
+  const handleOk= useCallback((e)=>{
+      setViewHistoryVisible(false)
+      props.updateConfirm(e)
+  
+  });
   const submitButton = useCallback((e) => {
     setButtonDisabled(e);
+  });
+  const handleCancel1 = useCallback(() => {
+    setViewDetailOrderHistoryVisible(false);
   });
   const handleCancel = useCallback(() => {
     Loginform.resetFields();
     Registerform.resetFields();
     setLoginVisible(false);
     setRegisterVisible(false);
+    setViewHistoryVisible(false);
+    setViewDetailOrderHistoryVisible(false);
   });
 
   const handleAfterClose = useCallback(() => {
@@ -92,6 +122,8 @@ export default function Header(props) {
 
   return (
     <div className={styles.WrapperStyled}>
+      <ViewHistoryModal viewHistoryVisible={viewHistoryVisible} handleOk={handleOk} handleCancel={handleCancel} ordersList={props.ordersList} showDetailOrder={showDetailOrder}/>
+      <DetailOrderModal viewDetailOrderHistoryVisible={viewDetailOrderHistoryVisible} handleCancel={handleCancel1} handleOk={handleOk1} orderID={orderID} />
       <Row>
         <Col span={8}>
           <div className={styles.Header_left}>
@@ -119,7 +151,7 @@ export default function Header(props) {
               onClick={(e) => e.preventDefault()}
             >
               <div>
-                {/* <Button
+                <Button
                   size="large"
                   style={{ marginRight: "10px" }}
                   onClick={showLoginModal}
@@ -150,7 +182,7 @@ export default function Header(props) {
                   form={Registerform}
                   submitButton={submitButton}
                   buttonDisabled={buttonDisabled}
-                ></RegisterModal> */}
+                ></RegisterModal>
                 <Dropdown overlay={menu} trigger={["click"]}>
                   <Avatar
                     size="large"

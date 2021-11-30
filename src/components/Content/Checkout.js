@@ -8,7 +8,7 @@ import { useNavigate  } from 'react-router-dom';
 import CheckoutModal from "../Modals/CheckoutModal";
 
 export default function Checkout(props) {
-  
+
   const navigate = useNavigate();
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
@@ -103,7 +103,7 @@ export default function Checkout(props) {
                </div>
             
               <Button icon={<ShopOutlined />} onClick={()=>showModal()}  size="large" style={{width:"100%",marginTop:"10px",fontSize:"20px"}}>Checkout</Button>
-           
+         
             </Card>
             </div>
         </Col>

@@ -31,9 +31,9 @@ export default function Restaurant_menu(props) {
   const onSearch = (value) => console.log(value);
   const { name } = useParams();
  const restaurantData = props.getRestaurantInfo(Object.values({name})[0]);
- console.log(restaurantData.id)
+ 
  const menuData = props.getMenuData(restaurantData.id);
- console.log(menuData)
+
  useEffect(() => {
   window.scrollTo(0, 0)
  
